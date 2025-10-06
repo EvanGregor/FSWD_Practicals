@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeatherNow</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="weather-container">
+    <h1>🌤 WeatherNow</h1>
+    <p class="subtitle">Live, Detailed Weather Updates</p>
+
+    <form id="weather-form" class="input-group">
+      <input type="text" id="city-input" placeholder="Enter city name" required />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <p id="status" class="status"></p>
+
+    <div id="weather-card" class="weather-card" style="display: none;">
+      <h2 id="location"></h2>
+      <p class="time" id="localtime"></p>
+      <img id="icon" src="" alt="Weather icon"/>
+      <p class="temp" id="temp"></p>
+      <p id="condition"></p>
+      <div class="details" id="details"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

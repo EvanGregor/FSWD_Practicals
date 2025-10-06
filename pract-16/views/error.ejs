@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Error</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h1 {
+      color: #e60000;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      text-decoration: none;
+      background: #e60000;
+      color: white;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    a:hover {
+      background: #ff3333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Oops!</h1>
+    <p><%= errorMsg %></p>
+    <a href="/">Go Back</a>
+  </div>
+</body>
+</html>
